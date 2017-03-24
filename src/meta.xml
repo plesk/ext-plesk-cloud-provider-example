@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<id>plesk-cloud-provider-example</id>
+	<name>Plesk Cloud Provider Example</name>
+	<description>Example of Plesk.Cloud connector</description>
+	<version>0.1</version>
+	<release>0</release>
+	<vendor>Plesk</vendor>
+	<url>http://plesk.com</url>
+	<plesk_min_version>17.0</plesk_min_version>
+</module>
