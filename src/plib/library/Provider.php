@@ -8,10 +8,13 @@ class Modules_PleskCloudProviderExample_Provider implements VpsProviderInterface
 {
     /**
      * @param int $subscriptionId
+     * @param array $additionalInfo
      * @return string $dumpId
      */
-    public function deployDump($subscriptionId)
+    public function deployDump($subscriptionId, $additionalInfo)
     {
+        \pm_Log::debug('launch deployment');
+        \pm_Log::vardump($additionalInfo['admin'], 'admin: ');
         // launch deployment here
         return '78';
     }
@@ -28,9 +31,12 @@ class Modules_PleskCloudProviderExample_Provider implements VpsProviderInterface
 
     /**
      * @param string $dumpId
+     * @param array $additionalInfo
      */
-    public function prepareDump($dumpId)
+    public function prepareDump($dumpId, $additionalInfo)
     {
+        \pm_Log::debug('make initial configuration');
+        \pm_Log::vardump($additionalInfo['admin'], 'admin: ');
         // make initial configuration if necessary
     }
 
