@@ -51,8 +51,8 @@ class Modules_PleskCloudProviderExample_Provider implements VpsProviderInterface
         $password = 'setup';
 
         $dump = new Dump();
-        $dump->ipv4 = [$ip];
-        $dump->ipv6 = [];
+        $dump->ipv4 = $ip;
+        $dump->ipv6 = '';
         $dump->password = $password;
         return $dump;
     }
