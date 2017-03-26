@@ -57,8 +57,12 @@ class Modules_PleskCloudProviderExample_Provider implements VpsProviderInterface
         return $dump;
     }
 
-    public function destroyDump(Dump $dump)
+    /**
+     * @param string $dumpId
+     */
+    public function destroyDump($dumpId)
     {
-        return;
+        \pm_Log::debug("destroy dump with ID {$dumpId}");
+        // destroy dump
     }
 }
