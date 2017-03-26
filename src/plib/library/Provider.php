@@ -7,9 +7,9 @@ use Modules_PleskCloudProviders_Provider\VpsProviderInterface;
 class Modules_PleskCloudProviderExample_Provider implements VpsProviderInterface
 {
     /**
-    * Start deployplment proces. 
+    * Run instance by given image id.  
     */
-    public function deployDump()
+    public function deployDump($imageId)
     {
         /*
         $ip = '10.52.49.78';
@@ -51,6 +51,7 @@ class Modules_PleskCloudProviderExample_Provider implements VpsProviderInterface
     public function prepareDump($dump_id, $opt)
     {
     }
+
 
     public function getDumpInfo($dump_id)
     {
